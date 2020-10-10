@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/about/index.html</loc>
+    
+    <lastmod>2020-10-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/2020/10/09/macOS-NoSQLBooster-for-MongoDB-%E7%A0%B4%E8%A7%A3/</loc>
+    
+    <lastmod>2020-10-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/2020/10/10/nginx-%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2020-10-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/tags/index.html</loc>
+    
+    <lastmod>2020-10-10</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://blog.weizhiwen.net/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/tags/%E7%A0%B4%E8%A7%A3/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.weizhiwen.net/tags/nginx/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>
