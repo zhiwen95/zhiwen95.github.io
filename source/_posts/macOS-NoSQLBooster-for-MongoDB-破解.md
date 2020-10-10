@@ -2,13 +2,12 @@
 title: NoSQLBooster for MongoDB 破解
 date: 2020-10-09 17:13:23
 tags: 
-  - NoSQLBooster for MongoDB
   - 破解
-
+  - 软件
 ---
 
-> NoSQLBooster for MongoDB 基于 Electro 编写 asar 打包，所以我们能够解包修改代码并重新打包。
-
+NoSQLBooster for MongoDB 基于 Electro 编写 asar 打包，所以我们能够解包修改代码并重新打包。
+<!-- more -->
 1. 安装工具
 
    ```bash

@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: blog by weizhiwen 
-subtitle: ''
+title: 阿拉喵の博客
+subtitle: '记录生活中的点点滴滴'
 description: ''
 keywords:
-author: weizhiwen
+author: 魏志文
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -101,9 +101,27 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# search 
+algolia:
+  applicationID: 8277BB07LC
+  apiKey: 12fe66e25dc333ae7056535abe27d0d3
+  indexName: zhiwen95.github.io
+
+# https://github.com/theme-next/hexo-leancloud-counter-security
+leancloud_counter_security:
+  enable_sync: true
+  app_id: yD8WST2AqBBFwumT77HH34sA-gzGzoHsz
+  app_key: pgCRU6B139E4AVJFzVXLmJcl
+  server_url: https://yd8wst2a.lc-cn-n1-shared.com # Required for apps from CN region, e.g. https://leancloud.cn
+  username:
+  password:
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/zhiwen95/zhiwen95.github.io.git
-  branch: gh-pages
+  # - 
+  #   type: leancloud_counter_security_sync
+  - 
+    type: git
+    repo: https://github.com/zhiwen95/zhiwen95.github.io.git
+    branch: gh-pages
