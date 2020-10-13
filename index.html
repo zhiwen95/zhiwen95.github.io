@@ -188,6 +188,72 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.weizhiwen.net/2020/10/13/PostgreSQL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="阿拉喵">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉喵の博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/13/PostgreSQL/" class="post-title-link" itemprop="url">PostgreSQL</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-13 11:44:57 / 修改时间：12:00:32" itemprop="dateCreated datePublished" datetime="2020-10-13T11:44:57+08:00">2020-10-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="时区设置"><a href="#时区设置" class="headerlink" title="时区设置"></a>时区设置</h3><p>设置 database 的时区</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">DATABASE</span> postgres <span class="keyword">SET</span> timezone <span class="keyword">TO</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>临时修改当前连接的时区</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> <span class="built_in">TIME</span> ZONE <span class="string">&quot;Asia/Shanghai&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>默认时区需要修改配置文件 postgresql.conf 修改后需重启 PostgreSQL 服务</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">timezone</span> = <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br><span class="line"><span class="attr">log_timezone</span> = <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.weizhiwen.net/2020/10/10/nginx-%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -388,7 +454,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
