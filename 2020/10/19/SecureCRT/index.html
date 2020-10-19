@@ -22,19 +22,21 @@
     var CONFIG = {"hostname":"blog.weizhiwen.net","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"8277BB07LC","apiKey":"12fe66e25dc333ae7056535abe27d0d3","indexName":"zhiwen95.github.io","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="配置时区设置设置 database 的时区 1ALTER DATABASE postgres SET timezone TO &amp;#x27;Asia&#x2F;Shanghai&amp;#x27;;  临时修改当前连接的时区 1SET TIME ZONE &quot;Asia&#x2F;Shanghai&quot;;  默认时区需要修改配置文件 postgresql.conf 修改后需重启 PostgreSQL 服务 12ti">
+  <meta name="description" content="为了防止世界被破坏 为了维护世界的和平 我需要设置一下 SecureCRT 🤣  关闭标签标题变更功能设置后可以使打开的标签的标题显示成 session 的名称，方便辨识服务器  点击菜单栏 Options 点击 Edit Default Session… Terminal &gt; Emulation &gt; Advanced 选中 Ignore window title change r">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PostgreSQL">
-<meta property="og:url" content="https://blog.weizhiwen.net/2020/10/13/PostgreSQL/index.html">
+<meta property="og:title" content="SecureCRT">
+<meta property="og:url" content="https://blog.weizhiwen.net/2020/10/19/SecureCRT/index.html">
 <meta property="og:site_name" content="阿拉喵の博客">
-<meta property="og:description" content="配置时区设置设置 database 的时区 1ALTER DATABASE postgres SET timezone TO &amp;#x27;Asia&#x2F;Shanghai&amp;#x27;;  临时修改当前连接的时区 1SET TIME ZONE &quot;Asia&#x2F;Shanghai&quot;;  默认时区需要修改配置文件 postgresql.conf 修改后需重启 PostgreSQL 服务 12ti">
+<meta property="og:description" content="为了防止世界被破坏 为了维护世界的和平 我需要设置一下 SecureCRT 🤣  关闭标签标题变更功能设置后可以使打开的标签的标题显示成 session 的名称，方便辨识服务器  点击菜单栏 Options 点击 Edit Default Session… Terminal &gt; Emulation &gt; Advanced 选中 Ignore window title change r">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-13T03:44:57.000Z">
-<meta property="article:modified_time" content="2020-10-13T04:00:32.383Z">
+<meta property="article:published_time" content="2020-10-19T11:03:45.000Z">
+<meta property="article:modified_time" content="2020-10-19T11:12:40.787Z">
 <meta property="article:author" content="阿拉喵">
+<meta property="article:tag" content="软件">
+<meta property="article:tag" content="SecureCRT">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://blog.weizhiwen.net/2020/10/13/PostgreSQL/">
+<link rel="canonical" href="https://blog.weizhiwen.net/2020/10/19/SecureCRT/">
 
 
 <script id="page-configurations">
@@ -47,7 +49,7 @@
   };
 </script>
 
-  <title>PostgreSQL | 阿拉喵の博客</title>
+  <title>SecureCRT | 阿拉喵の博客</title>
   
 
 
@@ -193,7 +195,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.weizhiwen.net/2020/10/13/PostgreSQL/">
+    <link itemprop="mainEntityOfPage" href="https://blog.weizhiwen.net/2020/10/19/SecureCRT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -206,7 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          PostgreSQL
+          SecureCRT
         </h1>
 
         <div class="post-meta">
@@ -217,7 +219,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-13 11:44:57 / 修改时间：12:00:32" itemprop="dateCreated datePublished" datetime="2020-10-13T11:44:57+08:00">2020-10-13</time>
+              <time title="创建时间：2020-10-19 19:03:45 / 修改时间：19:12:40" itemprop="dateCreated datePublished" datetime="2020-10-19T19:03:45+08:00">2020-10-19</time>
             </span>
 
           
@@ -238,14 +240,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="时区设置"><a href="#时区设置" class="headerlink" title="时区设置"></a>时区设置</h3><p>设置 database 的时区</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">DATABASE</span> postgres <span class="keyword">SET</span> timezone <span class="keyword">TO</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>临时修改当前连接的时区</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> <span class="built_in">TIME</span> ZONE <span class="string">&quot;Asia/Shanghai&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>默认时区需要修改配置文件 postgresql.conf 修改后需重启 PostgreSQL 服务</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">timezone</span> = <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br><span class="line"><span class="attr">log_timezone</span> = <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure>
+        <blockquote>
+<p>为了防止世界被破坏 为了维护世界的和平 我需要设置一下 SecureCRT 🤣</p>
+</blockquote>
+<h2 id="关闭标签标题变更功能"><a href="#关闭标签标题变更功能" class="headerlink" title="关闭标签标题变更功能"></a>关闭标签标题变更功能</h2><p>设置后可以使打开的标签的标题显示成 session 的名称，方便辨识服务器</p>
+<ol>
+<li>点击菜单栏 Options</li>
+<li>点击 Edit Default Session…</li>
+<li>Terminal &gt; Emulation &gt; Advanced</li>
+<li>选中 Ignore window title change requests</li>
+<li>点击 OK 选择 Change ALL Sessions</li>
+</ol>
 
     </div>
 
@@ -254,6 +259,10 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag"># 软件</a>
+              <a href="/tags/SecureCRT/" rel="tag"># SecureCRT</a>
+          </div>
 
         
 
@@ -261,13 +270,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/10/10/nginx-%E9%85%8D%E7%BD%AE/" rel="prev" title="nginx - 配置">
-      <i class="fa fa-chevron-left"></i> nginx - 配置
+    <a href="/2020/10/13/PostgreSQL/" rel="prev" title="PostgreSQL">
+      <i class="fa fa-chevron-left"></i> PostgreSQL
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/19/SecureCRT/" rel="next" title="SecureCRT">
-      SecureCRT <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -327,7 +333,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E5%8C%BA%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.1.</span> <span class="nav-text">时区设置</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%97%AD%E6%A0%87%E7%AD%BE%E6%A0%87%E9%A2%98%E5%8F%98%E6%9B%B4%E5%8A%9F%E8%83%BD"><span class="nav-number">1.</span> <span class="nav-text">关闭标签标题变更功能</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -534,7 +540,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'zhiwen95.github.io',
       owner       : 'zhiwen95',
       admin       : ['zhiwen95'],
-      id          : '67fb13443ce0391c5197aaed331e3f1d',
+      id          : 'ba0f5d0f02b857bf9a5635c3179b894f',
         language: 'zh-CN',
       distractionFreeMode: true
     });
