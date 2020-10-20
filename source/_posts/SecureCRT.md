@@ -38,7 +38,7 @@ tags:
   rm -rf /Users/weizhiwen/Library/Application\ Support/VanDyke/SecureCRT/Config/*.lic
   ```
 
-3. 创建定时任务配置，我用的文件名是 ~/Library/LaunchAgents/zhiwen.file.clean.plist，这里使用的是 macOS 的 launchctl 命令，需要修改 ProgramArguments/StandardOutPath/StandardErrorPath 三个参数
+3. 创建定时任务配置，我用的文件名是 ~/Library/LaunchAgents/zhiwen.file.clean.plist，这里使用的是 macOS 的 launchctl 命令，需要修改 Label/ProgramArguments/StandardOutPath/StandardErrorPath 四个参数
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
